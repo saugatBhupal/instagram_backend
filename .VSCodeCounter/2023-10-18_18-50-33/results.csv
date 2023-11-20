@@ -1,0 +1,29 @@
+"filename", "language", "Java", "Batch", "Java Properties", "HTML", "XML", "comment", "blank", "total"
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/.mvn/wrapper/maven-wrapper.properties", "Java Properties", 0, 0, 2, 0, 0, 0, 1, 3
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/mvnw.cmd", "Batch", 0, 118, 0, 0, 0, 51, 37, 206
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/pom.xml", "XML", 0, 0, 0, 0, 110, 11, 3, 124
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/ClassApplication.java", "Java", 17, 0, 0, 0, 0, 8, 4, 29
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/config/PasswordEncoderConfig.java", "Java", 12, 0, 0, 0, 0, 0, 5, 17
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/config/RestExceptionHandler.java", "Java", 18, 0, 0, 0, 0, 0, 5, 23
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/controller/ApiController.java", "Java", 35, 0, 0, 0, 0, 0, 11, 46
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/controller/MainController.java", "Java", 12, 0, 0, 0, 0, 0, 6, 18
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/dto/CredentialsDto.java", "Java", 4, 0, 0, 0, 0, 0, 4, 8
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/dto/ErrorDto.java", "Java", 3, 0, 0, 0, 0, 0, 3, 6
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/dto/Profile.java", "Java", 3, 0, 0, 0, 0, 0, 3, 6
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/dto/SignupDto.java", "Java", 7, 0, 0, 0, 0, 0, 5, 12
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/dto/UserDto.java", "Java", 14, 0, 0, 0, 0, 0, 5, 19
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/entities/Post.java", "Java", 27, 0, 0, 0, 0, 0, 10, 37
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/entities/User.java", "Java", 64, 0, 0, 0, 0, 0, 20, 84
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/exceptions/AppException.java", "Java", 12, 0, 0, 0, 0, 0, 5, 17
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/mappers/UserMapper.java", "Java", 13, 0, 0, 0, 0, 0, 7, 20
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/repository/UserRepository.java", "Java", 12, 0, 0, 0, 0, 0, 11, 23
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/security/JwtAuthenticationFilter.java", "Java", 53, 0, 0, 0, 0, 0, 12, 65
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/security/JwtService.java", "Java", 52, 0, 0, 0, 0, 0, 15, 67
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/security/SecurityConfig.java", "Java", 56, 0, 0, 0, 0, 0, 15, 71
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/service/UserService.java", "Java", 12, 0, 0, 0, 0, 0, 6, 18
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/service/serviceImpl/CustomUserDetailService.java", "Java", 16, 0, 0, 0, 0, 0, 7, 23
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/service/serviceImpl/UserServiceImpl.java", "Java", 69, 0, 0, 0, 0, 0, 13, 82
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/resources/application.properties", "Java Properties", 0, 0, 6, 0, 0, 0, 1, 7
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/resources/templates/Home.html", "HTML", 0, 0, 0, 12, 0, 0, 0, 12
+"/Users/saugatsingh/Documents/Projects/Softwarica/class/src/test/java/com/example/demo/ClassApplicationTests.java", "Java", 9, 0, 0, 0, 0, 0, 5, 14
+"Total", "-", 520, 118, 8, 12, 110, 70, 219, 1057

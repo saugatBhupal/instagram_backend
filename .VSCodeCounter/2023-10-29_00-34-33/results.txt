@@ -1,0 +1,125 @@
+Date : 2023-10-29 00:34:33
+Directory : /Users/saugatsingh/Documents/Projects/Softwarica/class
+Total : 62 files,  1612 codes, 71 comments, 479 blanks, all 2162 lines
+
+Languages
++-----------------+------------+------------+------------+------------+------------+
+| language        | files      | code       | comment    | blank      | total      |
++-----------------+------------+------------+------------+------------+------------+
+| Java            |         57 |      1,363 |          9 |        438 |      1,810 |
+| Batch           |          1 |        118 |         51 |         37 |        206 |
+| XML             |          1 |        110 |         11 |          3 |        124 |
+| HTML            |          1 |         12 |          0 |          0 |         12 |
+| Java Properties |          2 |          9 |          0 |          1 |         10 |
++-----------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                                   | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                                      |         62 |      1,612 |         71 |        479 |      2,162 |
+| . (Files)                                                                                                                              |          2 |        228 |         62 |         40 |        330 |
+| .mvn                                                                                                                                   |          1 |          2 |          0 |          1 |          3 |
+| .mvn/wrapper                                                                                                                           |          1 |          2 |          0 |          1 |          3 |
+| src                                                                                                                                    |         59 |      1,382 |          9 |        438 |      1,829 |
+| src/main                                                                                                                               |         58 |      1,373 |          9 |        433 |      1,815 |
+| src/main/java                                                                                                                          |         56 |      1,354 |          9 |        433 |      1,796 |
+| src/main/java/com                                                                                                                      |         56 |      1,354 |          9 |        433 |      1,796 |
+| src/main/java/com/example                                                                                                              |         56 |      1,354 |          9 |        433 |      1,796 |
+| src/main/java/com/example/demo                                                                                                         |         56 |      1,354 |          9 |        433 |      1,796 |
+| src/main/java/com/example/demo (Files)                                                                                                 |          1 |         17 |          7 |          4 |         28 |
+| src/main/java/com/example/demo/config                                                                                                  |          2 |         30 |          0 |          9 |         39 |
+| src/main/java/com/example/demo/controller                                                                                              |          6 |        159 |          0 |         50 |        209 |
+| src/main/java/com/example/demo/dto                                                                                                     |         16 |        212 |          0 |         81 |        293 |
+| src/main/java/com/example/demo/dto (Files)                                                                                             |          5 |         26 |          0 |         20 |         46 |
+| src/main/java/com/example/demo/dto/FollowDto                                                                                           |          2 |         24 |          0 |         11 |         35 |
+| src/main/java/com/example/demo/dto/commentDto                                                                                          |          2 |         34 |          0 |         12 |         46 |
+| src/main/java/com/example/demo/dto/likeDto                                                                                             |          2 |         24 |          0 |         11 |         35 |
+| src/main/java/com/example/demo/dto/postDto                                                                                             |          2 |         44 |          0 |         15 |         59 |
+| src/main/java/com/example/demo/dto/profile                                                                                             |          3 |         60 |          0 |         12 |         72 |
+| src/main/java/com/example/demo/entities                                                                                                |          5 |        205 |          0 |         68 |        273 |
+| src/main/java/com/example/demo/exceptions                                                                                              |          1 |         12 |          0 |          5 |         17 |
+| src/main/java/com/example/demo/mappers                                                                                                 |          6 |         70 |          0 |         44 |        114 |
+| src/main/java/com/example/demo/repository                                                                                              |          5 |         47 |          0 |         33 |         80 |
+| src/main/java/com/example/demo/security                                                                                                |          3 |        160 |          0 |         42 |        202 |
+| src/main/java/com/example/demo/service                                                                                                 |         11 |        442 |          2 |         97 |        541 |
+| src/main/java/com/example/demo/service (Files)                                                                                         |          5 |         66 |          0 |         22 |         88 |
+| src/main/java/com/example/demo/service/serviceImpl                                                                                     |          6 |        376 |          2 |         75 |        453 |
+| src/main/resources                                                                                                                     |          2 |         19 |          0 |          0 |         19 |
+| src/main/resources (Files)                                                                                                             |          1 |          7 |          0 |          0 |          7 |
+| src/main/resources/templates                                                                                                           |          1 |         12 |          0 |          0 |         12 |
+| src/test                                                                                                                               |          1 |          9 |          0 |          5 |         14 |
+| src/test/java                                                                                                                          |          1 |          9 |          0 |          5 |         14 |
+| src/test/java/com                                                                                                                      |          1 |          9 |          0 |          5 |         14 |
+| src/test/java/com/example                                                                                                              |          1 |          9 |          0 |          5 |         14 |
+| src/test/java/com/example/demo                                                                                                         |          1 |          9 |          0 |          5 |         14 |
++----------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------------------------------------------------------------+-----------------+------------+------------+------------+------------+
+| filename                                                                                                                               | language        | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------------------------------------+-----------------+------------+------------+------------+------------+
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/.mvn/wrapper/maven-wrapper.properties                                           | Java Properties |          2 |          0 |          1 |          3 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/mvnw.cmd                                                                        | Batch           |        118 |         51 |         37 |        206 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/pom.xml                                                                         | XML             |        110 |         11 |          3 |        124 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/ClassApplication.java                            | Java            |         17 |          7 |          4 |         28 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/config/PasswordEncoderConfig.java                | Java            |         12 |          0 |          4 |         16 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/config/RestExceptionHandler.java                 | Java            |         18 |          0 |          5 |         23 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/controller/ApiController.java                    | Java            |         35 |          0 |         11 |         46 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/controller/CommentController.java                | Java            |         21 |          0 |          7 |         28 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/controller/FollowController.java                 | Java            |         20 |          0 |          7 |         27 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/controller/LikeController.java                   | Java            |         21 |          0 |          7 |         28 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/controller/PostController.java                   | Java            |         29 |          0 |         10 |         39 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/controller/UserController.java                   | Java            |         33 |          0 |          8 |         41 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/dto/CredentialsDto.java                          | Java            |          4 |          0 |          4 |          8 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/dto/ErrorDto.java                                | Java            |          3 |          0 |          3 |          6 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/dto/FollowDto/FollowRequestDto.java              | Java            |         13 |          0 |          5 |         18 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/dto/FollowDto/FollowResponseDto.java             | Java            |         11 |          0 |          6 |         17 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/dto/Profile.java                                 | Java            |          3 |          0 |          3 |          6 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/dto/SignupDto.java                               | Java            |          4 |          0 |          5 |          9 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/dto/UserDto.java                                 | Java            |         12 |          0 |          5 |         17 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/dto/commentDto/CommentRequestDto.java            | Java            |         17 |          0 |          6 |         23 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/dto/commentDto/CommentResponseDto.java           | Java            |         17 |          0 |          6 |         23 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/dto/likeDto/LikeRequestDto.java                  | Java            |         14 |          0 |          5 |         19 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/dto/likeDto/LikeResponseDto.java                 | Java            |         10 |          0 |          6 |         16 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/dto/postDto/PostRequestDto.java                  | Java            |         19 |          0 |          6 |         25 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/dto/postDto/PostResponseDto.java                 | Java            |         25 |          0 |          9 |         34 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/dto/profile/ProfileRequestDto.java               | Java            |         22 |          0 |          4 |         26 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/dto/profile/ProfileResponseDto.java              | Java            |         18 |          0 |          4 |         22 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/dto/profile/ProfileResponseWithUserDto.java      | Java            |         20 |          0 |          4 |         24 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/entities/Comment.java                            | Java            |         33 |          0 |          8 |         41 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/entities/Follow.java                             | Java            |         28 |          0 |         11 |         39 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/entities/Like.java                               | Java            |         26 |          0 |          9 |         35 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/entities/Post.java                               | Java            |         40 |          0 |         14 |         54 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/entities/User.java                               | Java            |         78 |          0 |         26 |        104 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/exceptions/AppException.java                     | Java            |         12 |          0 |          5 |         17 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/mappers/CommentMapper.java                       | Java            |         10 |          0 |          6 |         16 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/mappers/FollowMapper.java                        | Java            |         10 |          0 |          6 |         16 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/mappers/LikeMapper.java                          | Java            |         10 |          0 |          6 |         16 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/mappers/PostMapper.java                          | Java            |         14 |          0 |          9 |         23 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/mappers/ProfileMapper.java                       | Java            |          8 |          0 |          6 |         14 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/mappers/UserMapper.java                          | Java            |         18 |          0 |         11 |         29 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/repository/CommentRepository.java                | Java            |          8 |          0 |          6 |         14 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/repository/FollowRepository.java                 | Java            |          9 |          0 |          6 |         15 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/repository/LikeRepository.java                   | Java            |          9 |          0 |          6 |         15 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/repository/PostRepository.java                   | Java            |          9 |          0 |          6 |         15 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/repository/UserRepository.java                   | Java            |         12 |          0 |          9 |         21 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/security/JwtAuthenticationFilter.java            | Java            |         52 |          0 |         12 |         64 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/security/JwtService.java                         | Java            |         52 |          0 |         15 |         67 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/security/SecurityConfig.java                     | Java            |         56 |          0 |         15 |         71 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/service/CommentService.java                      | Java            |         13 |          0 |          4 |         17 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/service/FollowService.java                       | Java            |         12 |          0 |          4 |         16 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/service/LikeService.java                         | Java            |         12 |          0 |          5 |         17 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/service/PostService.java                         | Java            |         14 |          0 |          4 |         18 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/service/UserService.java                         | Java            |         15 |          0 |          5 |         20 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/service/serviceImpl/CommentServiceImpl.java      | Java            |         49 |          0 |         13 |         62 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/service/serviceImpl/CustomUserDetailService.java | Java            |         18 |          0 |          7 |         25 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/service/serviceImpl/FollowServiceImpl.java       | Java            |         56 |          2 |         13 |         71 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/service/serviceImpl/LikeServiceImpl.java         | Java            |         56 |          0 |         13 |         69 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/service/serviceImpl/PostServiceImpl.java         | Java            |         77 |          0 |         15 |         92 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/java/com/example/demo/service/serviceImpl/UserServiceImpl.java         | Java            |        120 |          0 |         14 |        134 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/resources/application.properties                                       | Java Properties |          7 |          0 |          0 |          7 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/main/resources/templates/Home.html                                          | HTML            |         12 |          0 |          0 |         12 |
+| /Users/saugatsingh/Documents/Projects/Softwarica/class/src/test/java/com/example/demo/ClassApplicationTests.java                       | Java            |          9 |          0 |          5 |         14 |
+| Total                                                                                                                                  |                 |      1,612 |         71 |        479 |      2,162 |
++----------------------------------------------------------------------------------------------------------------------------------------+-----------------+------------+------------+------------+------------+
