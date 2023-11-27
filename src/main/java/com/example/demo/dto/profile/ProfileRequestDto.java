@@ -21,5 +21,4 @@ public class ProfileRequestDto {
     @NonNull
     private String bio;
     private String link;
-    private String profileImage;
 }

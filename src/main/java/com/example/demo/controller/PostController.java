@@ -26,11 +26,6 @@ import lombok.RequiredArgsConstructor;
 public class PostController {
     private final PostService postService;
 
-    // @PostMapping("")
-    // public ResponseEntity<PostResponseDto> savePost(@RequestBody PostRequestDto postDto){
-    //     return(ResponseEntity.ok(postService.save(postDto)));
-    // }
-
     @GetMapping("")
     public ResponseEntity<List<PostResponseDto>> getPost(){
         return(ResponseEntity.ok(postService.fetchAll()));

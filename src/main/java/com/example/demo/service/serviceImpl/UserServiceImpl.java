@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.security.authentication.AuthenticationManager;
 import com.example.demo.config.PasswordEncoderConfig;
 import com.example.demo.dto.CredentialsDto;
@@ -26,6 +27,7 @@ import com.example.demo.security.JwtService;
 import com.example.demo.service.FollowService;
 import com.example.demo.service.UserService;
 import com.example.demo.utils.dateTimeUtil.DateTimeUtil;
+import com.example.demo.utils.mediaUtil.MediaStorageUtil;
 
 import lombok.RequiredArgsConstructor;
 
@@ -105,7 +107,6 @@ public class UserServiceImpl implements UserService {
             user.setBio(profileRequestDto.getBio());
             user.setFullname(profileRequestDto.getFullname());
             user.setLink(profileRequestDto.getLink());
-            user.setProfileImage(profileRequestDto.getProfileImage());
             user.setSex(profileRequestDto.getSex());
             if(profileRequestDto.getPassword() != null){
                 user.setPassword(PasswordEncoderConfig.getInstance().encode(CharBuffer.wrap(profileRequestDto.getPassword())));
@@ -154,6 +155,13 @@ public class UserServiceImpl implements UserService {
                                                .collect(Collectors.toList())
                                                 );                                        
         return(profilePageResponseDto);
+    }
+
+    @Override
+    public ProfileResponseDto updateProfilePicture(MultipartFile file, Long UserID) {
+        User user = userRepository.findById(UserID).get();
+        user.setProfileImage(MediaStorageUtil.saveImage(file));
+        return(userMapper.toProfileResponseDto(userRepository.save(user)));
     }
 
     

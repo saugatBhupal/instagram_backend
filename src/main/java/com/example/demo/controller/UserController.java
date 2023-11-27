@@ -6,7 +6,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.example.demo.dto.profile.ProfilePageResponseDto;
 import com.example.demo.dto.profile.ProfileRequestDto;
@@ -36,6 +38,11 @@ public class UserController {
     @GetMapping("/profile/{userID}")
     private ResponseEntity<ProfilePageResponseDto> getProfilePage(@PathVariable("userID") Long userID){
         return(ResponseEntity.ok(userService.fetchFullProfile(userID)));
+    }
+
+    @PostMapping("/profile-image/{userID}")
+    private ResponseEntity<ProfileResponseDto> updateProfileImage(@RequestPart("image") MultipartFile image, @PathVariable("userID") Long userID ){
+        return ResponseEntity.ok(userService.updateProfilePicture(image, userID));
     }
     
 }
