@@ -8,35 +8,34 @@ import org.hibernate.annotations.OnDeleteAction;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import jakarta.persistence.CascadeType;
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.Table;
 import lombok.Data;
 
+@Entity
 @Data
-@Entity(name = "likes")
-public class Like {
-
+@Table(name = "verification")
+public class Verification {
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "LikeDate")
-    private Date likeDate;
+    private boolean verified;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "postID")
-    @JsonBackReference(value = "post-likes")
-    @OnDelete(action = OnDeleteAction.CASCADE)
-    private Post post;
+    private Date verifiedDate;
 
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    private String token;
+
+    @OneToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "userID")
-    @JsonBackReference(value = "user-likes")
+    @JsonBackReference(value = "user-verification")
+    @OnDelete(action = OnDeleteAction.CASCADE)
     private User user;
 
 }

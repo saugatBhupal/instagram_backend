@@ -47,7 +47,7 @@ public class PostController {
         return(ResponseEntity.ok("success"));
     }
 
-    @PostMapping("/file")
+    @PostMapping("")
     public ResponseEntity<PostResponseDto> uploadPost(@RequestPart("file") MultipartFile file,@RequestPart("post") PostRequestDto postRequestDto){
         return(ResponseEntity.ok(postService.save(postRequestDto,file)));
     }

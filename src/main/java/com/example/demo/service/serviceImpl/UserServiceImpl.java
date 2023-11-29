@@ -25,8 +25,11 @@ import com.example.demo.mappers.UserMapper;
 import com.example.demo.repository.UserRepository;
 import com.example.demo.security.JwtService;
 import com.example.demo.service.FollowService;
+import com.example.demo.service.MailService;
 import com.example.demo.service.UserService;
+import com.example.demo.service.VerificationService;
 import com.example.demo.utils.dateTimeUtil.DateTimeUtil;
+import com.example.demo.utils.generatorUtil.VerificationTokenGenerator;
 import com.example.demo.utils.mediaUtil.MediaStorageUtil;
 
 import lombok.RequiredArgsConstructor;
@@ -36,6 +39,8 @@ import lombok.RequiredArgsConstructor;
 public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
     private final FollowService followService;
+    private final VerificationService verificationService;
+    private final MailService mailService;
     private final UserMapper userMapper;
     private final ProfileMapper profileMapper;
     private final AuthenticationManager authenticationManager;
@@ -58,6 +63,13 @@ public class UserServiceImpl implements UserService {
                 user.setPassword(PasswordEncoderConfig.getInstance().encode(CharBuffer.wrap(details.password())));
                 user.setJoinedDate(DateTimeUtil.getDate());
                 User registered = userRepository.save(user);
+                try{
+                    verificationService.SendToken(user);
+                }
+                catch(Exception e){
+                    e.printStackTrace();
+                    throw new AppException("Unable to send mail to the given address. Please recheck your address.", HttpStatus.RESET_CONTENT);
+                }
                 return(userMapper.toUserDto(registered));
             }
             catch(Exception e){

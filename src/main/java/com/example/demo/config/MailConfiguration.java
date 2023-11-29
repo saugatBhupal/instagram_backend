@@ -13,10 +13,10 @@ public class MailConfiguration {
     @Bean
     public JavaMailSender getJavaMailSender() {
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
-        mailSender.setHost("mail.myexamcenter.com");
+        mailSender.setHost("mail.sbhupal.com.np");
         mailSender.setPort(465);
-        mailSender.setUsername("mail@myexamcenter.com");
-        mailSender.setPassword("Kjlc@&2023");
+        mailSender.setUsername("instagram@sbhupal.com.np");
+        mailSender.setPassword("saugat@&2023");
 
         Properties props = mailSender.getJavaMailProperties();
         props.put("mail.transport.protocol", "smtp");

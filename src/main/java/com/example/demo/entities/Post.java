@@ -17,6 +17,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.Data;
+import lombok.val;
 
 @Data
 @Entity
@@ -41,15 +42,15 @@ public class Post {
 
     @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "userID")
-    @JsonBackReference
+    @JsonBackReference(value = "user-post")
     private User user;
 
     @OneToMany(mappedBy = "post", orphanRemoval = true)
-    @JsonManagedReference
+    @JsonManagedReference(value = "post-comments")
     private List<Comment> comments;
 
     @OneToMany(mappedBy = "post", orphanRemoval = true)
-    @JsonManagedReference
+    @JsonManagedReference(value = "post-likes")
     private List<Like> likes;
 
 }

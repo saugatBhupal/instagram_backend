@@ -28,11 +28,11 @@ public class Comment {
 
     @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "userID")
-    @JsonBackReference
+    @JsonBackReference(value = "user-comments")
     private User user;
 
     @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "postID")
-    @JsonBackReference
+    @JsonBackReference(value = "post-comments")
     private Post post;
 }

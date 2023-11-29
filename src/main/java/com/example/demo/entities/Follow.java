@@ -11,6 +11,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.Data;
+import lombok.val;
 
 @Entity
 @Data
@@ -24,11 +25,11 @@ public class Follow {
     private Date followedDate;
 
     @ManyToOne(cascade = CascadeType.PERSIST)
-    @JsonBackReference
+    @JsonBackReference(value = "user-following")
     private User follower; 
 
     @ManyToOne(cascade = CascadeType.PERSIST)
-    @JsonBackReference
+    @JsonBackReference(value = "user-followers")
     private User owner;
 
 

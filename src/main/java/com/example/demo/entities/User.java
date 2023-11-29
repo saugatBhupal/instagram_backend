@@ -16,6 +16,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.validation.constraints.Size;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -58,25 +59,30 @@ public class User implements UserDetails{
 
     private Date joinedDate;
 
+
     @OneToMany(mappedBy = "user", orphanRemoval = true)
-    @JsonManagedReference
+    @JsonManagedReference(value = "user-post")
     private List<Post> post;
 
     @OneToMany(mappedBy = "user", orphanRemoval = true)
-    @JsonManagedReference
+    @JsonManagedReference(value = "user-comments")
     private List<Comment> comments;
 
     @OneToMany(mappedBy = "user", orphanRemoval = true)
-    @JsonManagedReference
+    @JsonManagedReference(value = "user-likes")
     private List<Like> likes;
 
     @OneToMany(mappedBy = "owner", orphanRemoval = true)
-    @JsonManagedReference
+    @JsonManagedReference(value = "user-followers")
     private List<Follow> followers;
 
     @OneToMany(mappedBy = "follower", orphanRemoval = true)
-    @JsonManagedReference
+    @JsonManagedReference(value = "user-following")
     private List<Follow> following;
+
+    @OneToOne(mappedBy = "user", orphanRemoval = true)
+    @JsonManagedReference(value = "user-verification")
+    private Verification verification;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
